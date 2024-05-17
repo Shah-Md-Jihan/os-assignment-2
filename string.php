@@ -1,8 +1,8 @@
 <?php
 
 $strings = ["Hello", "World", "PHP", "Programming"];
-function vowelChecker($words){
-    function count_vowels($string) {
+
+function count_vowels($string) {
 
     $vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
 
@@ -18,6 +18,7 @@ function vowelChecker($words){
 
     return $count;
 }
+function vowelChecker($words){
 
     foreach($words as $word){
         echo "Original String: ".$word.", Vowel Count: ".count_vowels($word)." Reversed String: ".strrev($word)."\n";
